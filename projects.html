@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8" />
+        <meta name=”viewport” content=”width=device-width, initial-scale = 1.0”>
+        <!-- Page -->
+        <title>Experience</title>
+        <!-- stylesheets --> 
+        <link rel="stylesheet" href="/daniep7/css/style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- cursor edit -->
+        <header>
+            <nav>
+                <ul>
+                    <li class = "logo"> DP Portfolio</li>
+                     <li class = "nav_item"><a href = "projects.html"><span class = "active">Projects</span></a></li>
+                    <li class = "nav_item"><a href = "experience.html"><span>Experience</span></a></li>
+                    <li class = "nav_item"><a href = "index.html"><span >Home</span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="projects">
+            <div class = "card-3 proj1" id = "button1">
+                <h2> Project 1 </h2>
+                <img src = "images/project1.jpg">
+            </div>
+            <div class = "card-3 proj2" id = "button2">
+                <h2> Project 2 </h2>
+                <img src = "images/project2.jpg">
+            </div>
+            <div class="card-3 proj3" id = "button3">
+                <h2> Project 3 </h2>
+                <img src = "images/project3.jpg">
+            </div>
+            <div class="proj-desc">
+                <h2>Projects</h2>
+                <p> The listed projects below have been completed. As for future plans, I hope to brush up on Python before working on another personal project, most likely using arduinos as well. To replace the current shiny app, I will also be analyzing another dataset relating to socioeconomic disparities in education.</p>
+                <span>Completed: </span>
+                <ul>
+                    <li>
+                        Project 1: This shiny app which presents and analyzes data visualtions on student alcohol consumption was a project completed by my group in Info 201. This was done primarily by using R and Shiny.
+                    </li>
+                    <li>
+                        Project 2: This was a pitch video by my group for Info 200. Our prototype app, ConneXion, was wireframed in Figma and was made to be a job finding app for freelancers. 
+                    </li>
+                    <li>
+                        Project 3 - currently empty.
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-modal-1">
+                <div class="modal-content">
+                    <div class="close1">+</div>
+                    <iframe src="https://danielpham0.shinyapps.io/final-project-danielpham0/" width=100% height=100%></iframe>
+                </div>
+            </div>
+            <div class="bg-modal-2">
+                <div class="modal-content">
+                    <div class="close2">+</div>
+                    <iframe src="https://www.youtube.com/embed/aR6yQg8xorw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width=100% height=100%>></iframe>
+                </div>
+            </div>
+            <!--
+            <div class="bg-modal-3">
+                <div class="modal-content">
+                    <div class="close3">+</div>
+                    <img src="images/project3a.jpg">
+                    <span> Information about specific project three.</span>
+                </div>
+            </div>
+            -->
+            
+        </main>
+        <footer>
+            <div class = "footer_heading">
+                <H1>
+                Daniel Pham
+                </H1>
+                <small>
+                &copy; 2020, All Rights Reserved
+                </small>
+            </div>
+            <div class = "site_nav">
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "experience.html">Experience</a></li>
+                    <li><a href = "projects.html">Projects</a></li>
+                </ul>
+            </div>
+            <div class = "socials">
+                <ul>
+                    <li><a href = "https://www.linkedin.com/in/danieltpham/">LinkedIn</a></li>
+                    <li><a href = "https://www.instagram.com/danyopham/">Instagram</a></li>
+                    <li><a href = "https://www.facebook.com/daniel.pham.9028/">Facebook</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script>
+            document.getElementById('button1').addEventListener("click", function() {
+                document.querySelector('.bg-modal-1').style.display = "flex";
+            });
+            document.querySelector('.close1').addEventListener("click", function() {
+                document.querySelector('.bg-modal-1').style.display = "none";
+            });
+            
+            document.getElementById('button2').addEventListener("click", function() {
+                document.querySelector('.bg-modal-2').style.display = "flex";
+            });
+            document.querySelector('.close2').addEventListener("click", function() {
+                document.querySelector('.bg-modal-2').style.display = "none";
+            });
+            
+            document.getElementById('button3').addEventListener("click", function() {
+                document.querySelector('.bg-modal-3').style.display = "flex";
+            });
+            document.querySelector('.close3').addEventListener("click", function() {
+                document.querySelector('.bg-modal-3').style.display = "none";
+            });
+        </script>
+    </body>
+</html>

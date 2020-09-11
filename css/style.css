@@ -1,0 +1,477 @@
+/* Page CSS */
+body {
+    width: 100%;
+    background-color: #F6EACA;
+    color: #6C6C6C;
+    padding-bottom: 9.5rem;
+    margin: auto;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+li{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+html{
+    position:relative;
+}
+.splash{
+    text-align: center;
+    padding-top: 30vh;
+}
+.splash h1{
+    font-size: 60px;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+/* Nav bar */
+header{
+    position: relative;
+    z-index: 3;
+}
+header ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    display: block;
+    font-size: 25px;
+    position: fixed;
+    top: 0px;
+    width: 100%
+}
+header .logo{
+    float: left;
+    text-align: center;
+    padding: 15px;
+}
+header a {
+    color: #6C6C6C;
+    float: right;
+    padding: 15px 30px 8px;
+    text-align: center;
+    text-decoration: none;
+}
+header li a span:hover {
+    border-bottom: 5px solid #C0F0FF;
+}
+.active {
+    border-bottom: 5px solid #C0F0FF;
+}
+
+/* Main */
+main {
+    padding:50px 0px 80px;
+}
+/* PAGE 1 - HOME */
+/* about */
+.about {
+    background-image: url("/daniep7/images/background.jpg");
+    background-position: center 100px;
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 2fr 1fr 4fr 1fr 7fr 2fr;
+    grid-template-columns: 6fr 4fr 6fr 5fr 11fr 4fr 6fr;
+    width: 100%;
+    height: 650px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    
+}
+.left_label{
+    padding: 5px 0px 10px;
+    background: #C4C4C4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-style: solid;
+    border-color: white;
+}
+.about_left{
+    background: #C0F0FF;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    border-style: solid;
+    border-color: white;
+    z-index: 1;
+    
+}
+.about_right{
+    background: #888888;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    overflow-x: scroll;
+    
+}
+.about_right h1, .about_right p{
+    text-align: right;
+    margin-left: 185px;
+    margin-right: 25px;
+}
+.about_right h1{
+    font-size: 40px;
+}
+.about_right a{
+    text-decoration: underline;
+    color: white;
+    pointer-events: all;
+}
+.about_right br{
+  content: "";
+  margin: 6em;
+  display: block;
+  font-size: 24%;
+}
+.right_label{
+    padding: 5px 0px 10px;
+    background: #C4C4C4;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-style: solid;
+    border-color: white;
+}
+.about span {
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+}
+/* intro */
+.intro {
+    display: grid;
+    grid-template-columns: 10fr 4fr;
+    width: 100%;
+}
+.intro_left{
+    width: auto;
+    height: 600px;
+    background: #888888;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    color: white;
+    overflow-x: scroll;
+}
+.intro_left h1, .intro_left p{
+    text-align: left;
+    margin-left: 75px;
+    margin-right: 150px;
+}
+.intro_left ul{
+    margin-left: 125px;
+}
+.intro_left p{
+    font-size: 18px;
+}
+.intro_left br{
+  content: "";
+  margin: 4em;
+  display: block;
+  font-size: 24%;
+}
+.intro_right{
+    right:0;
+    height: 600px;
+    background: #C0F0FF;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    /*border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 10px;
+    border-right: none;*/
+    
+}
+
+/* PAGE 2 - EXPERIENCE (Cards)*/
+.card-1, .card-2a, .card-2b{
+    color: white;
+    padding-top: 50px;
+}
+
+.card-1{
+    display: grid;
+    grid-template-columns: 2fr 1fr 4fr 10fr 3fr;
+    grid-template-rows: 1fr 1fr 4fr;
+    width: 100%;
+    height: 200px;
+}
+
+.card-1 h4{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+    text-align: center;
+    font-size: 35px;
+    background: #C4C4C4;
+    border-style: solid;
+    border-color: white;
+    margin: 0;
+    z-index: 1;
+}
+.card-1 p{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    
+    text-align: left;
+    font-size: 20px;
+    background: #888888;
+    margin: 0;
+    padding-left: 50px;
+    padding-top: 35px;
+    border-style: solid;
+    border-color: white;
+    overflow-x: scroll;
+}
+.card-1 a{
+    text-decoration: underline;
+    color: white;
+    font-size: 22px;
+    line-height: 200%;
+    pointer-events: all;
+}
+
+.card-2a{
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 13fr 8fr 2fr 3fr;
+    grid-template-rows: 1fr 1fr 4fr 1fr;
+    width: 100%;
+    height: 240px;
+}
+.card-2a img{
+    align-self: baseline;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 0;
+    background: #888888;
+    border-style: solid;
+    border-color: #C0F0FF;
+    border-width: 7px;
+    justify-self: center;
+    z-index: 1;
+}
+
+.card-2a h4{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+    background: #C4C4C4;
+    border-style: solid;
+    border-color: white;
+    z-index: 1;
+    
+}
+.card-2a p{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    margin: 0;
+    padding: 50px;
+    padding-left: 100px;
+    text-align: left;
+    font-size: 19px;
+    background: #888888;
+    border-style: solid;
+    border-color: white;
+    overflow-x: scroll;
+}
+
+.card-2b{
+    display: grid;
+    grid-template-columns: 3fr 2fr 8fr 13fr 2fr 2fr 3fr;
+    grid-template-rows: 1fr 1fr 4fr 1fr;
+    width: 100%;
+    height: 240px;
+}
+
+.card-2b img{
+    margin: 0;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background: #888888;
+    border-style: solid;
+    border-color: #C0F0FF;
+    border-width: 7px;
+    justify-self: center;
+    z-index: 1;
+}
+.card-2b h4{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: 0;
+    text-align: center;
+    font-size: 35px;
+    background: #C4C4C4;
+    border-style: solid;
+    border-color: white;
+    z-index: 1
+}
+.card-2b p{
+    margin: 0;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    text-align: left;
+    font-size: 19px;
+    background: #888888;
+    border-style: solid;
+    border-color: white;
+    padding: 50px;
+    padding-right: 100px;
+    overflow-x: scroll;
+}
+
+/* PAGE 3 - PROJECTS */
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 7fr 7fr 7fr 1fr 24fr 1fr;
+    grid-template-rows: 2fr 15fr;
+    grid-column-gap: 5%;
+    color: white;
+}
+
+.card-3{
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    height: 525px;
+}
+
+.card-3 h2{
+    padding-top: 40px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    z-index: 1;
+    font-size: 35px;
+    position: absolute;
+}
+.card-3 img{
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    transition: opacity .3s ease;
+    cursor: pointer;
+}
+.card-3 img:hover{
+    opacity: 1;
+}
+
+.proj1{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.proj2{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+.proj3{
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+.proj-desc{
+    background: #888888;
+    padding-top: 10px;
+    padding: 20px 40px 20px;
+    grid-column-start: 6;
+    grid-row-start: 2;
+    border-style: solid;
+    border-color: white;
+}
+.bg-modal-1, .bg-modal-2, .bg-modal-3{
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    display: none;
+    top: 0;
+}
+.modal-content{
+    width: 1000px;
+    height: 550px;
+    top: -70px;
+    background:#C4C4C4;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.close1, .close2, .close3{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+/* PAGE 4 - PROJECTS EXAMPLE */
+
+/* Footer */
+footer{
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    height: 9.5rem;
+    display: block;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+footer .footer_heading{
+    position: relative;
+    padding: 15px 40px 30px;
+    float: left;
+}
+footer h1{
+    line-height: 20px;
+}
+footer .socials, .site_nav{
+    padding: 15px 35px 0px 20px;
+    float: right;
+}
+footer ul{
+    list-style-type: none;
+}
+footer a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
